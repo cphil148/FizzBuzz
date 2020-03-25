@@ -22,4 +22,9 @@ class FizzBuzzTest{
         assertThat(fizzbuzz.compute(5)).isEqualTo("Buzz")
         assertThat(fizzbuzz.compute(10)).isEqualTo("Buzz")
     }
+
+    @Test
+    fun `If a number is divisible by both 3 and 5, print FizzBuzz`() {
+        assertThat(fizzbuzz.compute(15)).isEqualTo("FizzBuzz")
+    }
 }

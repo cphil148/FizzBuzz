@@ -9,4 +9,10 @@ class FizzBuzzTest{
 
         assertThat(fizzbuzz.compute(1)).isEqualTo("1")
     }
+    @Test
+    fun `fizzbuzz should return two when given two`() {
+        val fizzbuzz = FizzBuzz()
+
+        assertThat(fizzbuzz.compute(2)).isEqualTo("2")
+    }
 }

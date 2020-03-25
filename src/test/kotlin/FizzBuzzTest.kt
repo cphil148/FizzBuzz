@@ -16,4 +16,10 @@ class FizzBuzzTest{
         assertThat(fizzbuzz.compute(3)).isEqualTo("Fizz")
         assertThat(fizzbuzz.compute(6)).isEqualTo("Fizz")
     }
+
+    @Test
+    fun `If a number is divisible by 5, print Buzz`() {
+        assertThat(fizzbuzz.compute(5)).isEqualTo("Buzz")
+        assertThat(fizzbuzz.compute(10)).isEqualTo("Buzz")
+    }
 }

@@ -3,23 +3,16 @@ import org.junit.Test
 
 class FizzBuzzTest{
 
-    @Test
-    fun `fizzbuzz should return one when given one`() {
-        val fizzbuzz = FizzBuzz()
+    val fizzbuzz = FizzBuzz()
 
+    @Test
+    fun `If a number is not divisible by 3 or 5, print the number`() {
         assertThat(fizzbuzz.compute(1)).isEqualTo("1")
-    }
-    @Test
-    fun `fizzbuzz should return two when given two`() {
-        val fizzbuzz = FizzBuzz()
-
         assertThat(fizzbuzz.compute(2)).isEqualTo("2")
     }
 
     @Test
     fun `fizzbuzz should return fizz when given 3`() {
-        val fizzbuzz = FizzBuzz()
-
         assertThat(fizzbuzz.compute(3)).isEqualTo("Fizz")
     }
 }

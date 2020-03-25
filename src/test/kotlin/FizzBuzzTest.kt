@@ -12,7 +12,8 @@ class FizzBuzzTest{
     }
 
     @Test
-    fun `fizzbuzz should return fizz when given 3`() {
+    fun `fizzbuzz should return fizz when given a number divisble by 3`() {
         assertThat(fizzbuzz.compute(3)).isEqualTo("Fizz")
+        assertThat(fizzbuzz.compute(6)).isEqualTo("Fizz")
     }
 }

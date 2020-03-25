@@ -3,7 +3,7 @@ class FizzBuzz {
 
     fun compute(number: Int): String {
 
-        if(number == 3)
+        if(number % 3 == 0)
         {
             return "Fizz"
         }

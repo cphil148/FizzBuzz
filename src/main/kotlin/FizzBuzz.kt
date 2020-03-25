@@ -3,22 +3,18 @@ class FizzBuzz {
 
     fun compute(number: Int): String {
 
-        if(number % 3 == 0 && number % 5 == 0)
-        {
-            return "FizzBuzz"
+        return when {
+            isDivisibleByThreeAndFive(number) -> "FizzBuzz"
+            isDivisibleByThree(number) -> "Fizz"
+            isDivisibleByFive(number) -> "Buzz"
+            else -> number.toString()
         }
-
-        if(number % 3 == 0)
-        {
-            return "Fizz"
-        }
-
-        if(number % 5 == 0)
-        {
-            return "Buzz"
-        }
-
-
-        return number.toString()
     }
+
+    private fun isDivisibleByThreeAndFive(number: Int) = isDivisibleByThree(number) && isDivisibleByFive(number)
+
+    private fun isDivisibleByFive(number: Int) = number % 5 == 0
+
+    private fun isDivisibleByThree(number: Int) = number % 3 == 0
+
 }

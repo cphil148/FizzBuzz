@@ -23,3 +23,20 @@ To practice the following-
 3. If a number is divisible by both 3 and 5, print "fizzbuzz"
 4. If a number is not divisible by 3 or 5, print the number.
     
+    
+<h3>Sample Output: </h3>
+1. 1
+2. 2
+3. fizz
+4. 4
+5. buzz
+6. fizz
+7. 7
+8. 8
+9. fizz
+10. buzz
+11. 11
+12. fizz
+13. 13
+14. 14
+15. fizzbuzz

@@ -3,7 +3,11 @@ class FizzBuzz {
 
     fun compute(number: Int): String {
 
-        return number.toString()
+        if(number == 3)
+        {
+            return "Fizz"
+        }
 
+        return number.toString()
     }
 }
